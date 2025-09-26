@@ -10,10 +10,30 @@
         /* Custom font import for a cleaner look */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         
-        /* Apply Inter font family */
+        /* Apply Inter font family and smooth scrolling */
         body {
             font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; 
         }
+
+        /* VIBRANT ACCENT CHANGES */
+        
+        /* Monogram Gradient: Custom soft background for the 'M' circle (using Teal/Cyan) */
+        .monogram-gradient {
+            background: linear-gradient(145deg, #4fd1c5, #00b894); /* Brighter Teal/Cyan gradient */
+        }
+        
+        /* Card Hover Effect: Increased lift and added a slight teal shadow ring */
+        .card-hover {
+            /* Smoother, bouncier transition curve */
+            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px); /* Increased lift for vibrancy */
+            /* Stronger shadow with a teal tint outline for a 'pop' effect */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 0 0 3px rgba(6, 182, 212, 0.15); 
+        }
+
         /* Style for the subtle tech stack icons */
         .tech-icon {
             filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
@@ -27,8 +47,8 @@
 
         <!-- Header / Hero Section -->
         <header class="text-center mb-16">
-            <!-- Simple monogram placeholder for a professional, clean look -->
-            <div class="w-24 h-24 mx-auto mb-6 bg-slate-200 rounded-full flex items-center justify-center text-4xl font-extrabold text-slate-700 shadow-lg">M</div>
+            <!-- Monogram text changed to a vibrant color -->
+            <div class="w-24 h-24 mx-auto mb-6 monogram-gradient rounded-full flex items-center justify-center text-4xl font-extrabold text-teal-700 shadow-lg">M</div>
             
             <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-2 tracking-tight">Mokshada</h1>
             <p class="text-xl md:text-2xl text-slate-600 font-medium">Software Developer | Thrissur, Kerala</p>
@@ -37,8 +57,8 @@
         <!-- Main Content Grid -->
         <main class="space-y-12">
 
-            <!-- About Section -->
-            <section class="p-8 bg-white shadow-2xl rounded-2xl border-t-4 border-slate-700">
+            <!-- About Section - Accent border color changed to vibrant teal -->
+            <section class="p-8 bg-white shadow-2xl rounded-2xl border-t-4 border-teal-500 card-hover">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">Profile Summary</h2>
                 <p class="text-lg text-gray-700 leading-relaxed">
                     A highly **passionate Software Developer** based in Thrissur, Kerala, bringing **4 years of comprehensive experience** in building dynamic, high-performance web and mobile applications.
@@ -47,11 +67,11 @@
             </section>
 
             <!-- Tech Stack Section -->
-            <section class="p-8 bg-white shadow-xl rounded-2xl">
+            <section class="p-8 bg-white shadow-xl rounded-2xl card-hover">
                 <h2 class="text-3xl font-bold text-gray-900 mb-8">Expertise & Technologies</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                     
-                    <!-- MERN Stack -->
+                    <!-- MERN Stack - Accent color remains green, but the card hover provides the vibrancy -->
                     <div class="flex flex-col items-center p-6 bg-slate-50 rounded-xl transition duration-300 hover:bg-slate-100 hover:shadow-md border border-gray-100 tech-icon">
                         <span class="text-5xl mb-3 text-green-600">
                             <!-- Minimal SVG for Web Development -->
@@ -84,24 +104,24 @@
                 </div>
             </section>
 
-            <!-- Projects/Experience Placeholder -->
-            <section class="p-8 bg-white shadow-xl rounded-2xl">
+            <!-- Projects/Experience Placeholder - Accent border color changed to vibrant teal -->
+            <section class="p-8 bg-white shadow-xl rounded-2xl card-hover">
                 <h2 class="text-3xl font-bold text-gray-900 mb-6">Recent Work</h2>
                 <div class="space-y-6">
-                    <div class="p-5 border-l-4 border-slate-400 bg-gray-50 rounded-lg transition duration-200 hover:bg-gray-100">
+                    <div class="p-5 border-l-4 border-teal-400 bg-gray-50 rounded-lg transition duration-200 hover:bg-gray-100">
                         <h3 class="font-semibold text-gray-800 text-lg">Full-Stack E-commerce Solution (MERN)</h3>
                         <p class="text-sm text-gray-600 mt-1">Leveraged MERN stack to build a robust, scalable e-commerce platform with real-time inventory and payment integration.</p>
                     </div>
-                    <div class="p-5 border-l-4 border-slate-400 bg-gray-50 rounded-lg transition duration-200 hover:bg-gray-100">
+                    <div class="p-5 border-l-4 border-teal-400 bg-gray-50 rounded-lg transition duration-200 hover:bg-gray-100">
                         <h3 class="font-semibold text-gray-800 text-lg">Cross-Platform Utility App (Flutter)</h3>
                         <p class="text-sm text-gray-600 mt-1">Designed and developed a sleek mobile application for internal business operations, significantly improving data accessibility.</p>
                     </div>
-                    <p class="mt-8 text-gray-500 text-center">View my complete work history on LinkedIn or contact me for a detailed CV.</p>
+                    <p class="mt-8 text-gray-500 text-center">View my complete work history on <a href="#" class="text-teal-600 hover:underline">LinkedIn</a> or contact me for a detailed CV.</p>
                 </div>
             </section>
 
              <!-- Personal Interest / Hobbies -->
-            <section class="p-8 bg-white shadow-xl rounded-2xl">
+            <section class="p-8 bg-white shadow-xl rounded-2xl card-hover">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">Interests</h2>
                 <div class="flex items-center space-x-4">
                     <span class="text-4xl text-amber-500">📚</span>
@@ -113,13 +133,13 @@
 
         </main>
 
-        <!-- Footer -->
+        <!-- Footer - Links now use the vibrant teal accent color on hover -->
         <footer class="mt-16 pt-8 border-t border-gray-200 text-center text-gray-500">
             <p class="mb-2">&copy; 2025 Mokshada. Built with Passion in Kerala.</p>
             <div class="flex justify-center space-x-6 text-base">
-                <a href="#" class="hover:text-slate-700 transition font-medium">LinkedIn</a>
-                <a href="#" class="hover:text-slate-700 transition font-medium">GitHub</a>
-                <a href="#" class="hover:text-slate-700 transition font-medium">Email</a>
+                <a href="#" class="hover:text-teal-600 transition font-medium">LinkedIn</a>
+                <a href="#" class="hover:text-teal-600 transition font-medium">GitHub</a>
+                <a href="#" class="hover:text-teal-600 transition font-medium">Email</a>
             </div>
         </footer>
     </div>
