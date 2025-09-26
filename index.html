@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokshada | Software Developer Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for a cleaner look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Apply Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for the subtle tech stack icons */
+        .tech-icon {
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased min-h-screen">
+
+    <!-- Portfolio Container - Constrained width for minimalistic focus -->
+    <div class="container mx-auto px-4 py-16 md:px-8 max-w-4xl">
+
+        <!-- Header / Hero Section -->
+        <header class="text-center mb-16">
+            <!-- Simple monogram placeholder for a professional, clean look -->
+            <div class="w-24 h-24 mx-auto mb-6 bg-slate-200 rounded-full flex items-center justify-center text-4xl font-extrabold text-slate-700 shadow-lg">M</div>
+            
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-2 tracking-tight">Mokshada</h1>
+            <p class="text-xl md:text-2xl text-slate-600 font-medium">Software Developer | Thrissur, Kerala</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="space-y-12">
+
+            <!-- About Section -->
+            <section class="p-8 bg-white shadow-2xl rounded-2xl border-t-4 border-slate-700">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Profile Summary</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    A highly **passionate Software Developer** based in Thrissur, Kerala, bringing **4 years of comprehensive experience** in building dynamic, high-performance web and mobile applications.
+                    I focus on delivering clean, efficient code and thrive on implementing new technologies across the full stack to solve complex challenges.
+                </p>
+            </section>
+
+            <!-- Tech Stack Section -->
+            <section class="p-8 bg-white shadow-xl rounded-2xl">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Expertise & Technologies</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    
+                    <!-- MERN Stack -->
+                    <div class="flex flex-col items-center p-6 bg-slate-50 rounded-xl transition duration-300 hover:bg-slate-100 hover:shadow-md border border-gray-100 tech-icon">
+                        <span class="text-5xl mb-3 text-green-600">
+                            <!-- Minimal SVG for Web Development -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M15 5H9"/><path d="M18 10a6 6 0 0 0-12 0v6a6 6 0 0 0 12 0v-6z"/></svg>
+                        </span>
+                        <h3 class="text-xl font-semibold text-gray-800">MERN Stack</h3>
+                        <p class="text-sm text-gray-500 text-center mt-1">Full-stack web development</p>
+                    </div>
+                    
+                    <!-- Flutter -->
+                    <div class="flex flex-col items-center p-6 bg-slate-50 rounded-xl transition duration-300 hover:bg-slate-100 hover:shadow-md border border-gray-100 tech-icon">
+                        <span class="text-5xl mb-3 text-blue-600">
+                            <!-- Minimal SVG for Mobile Development -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                        </span>
+                        <h3 class="text-xl font-semibold text-gray-800">Flutter</h3>
+                        <p class="text-sm text-gray-500 text-center mt-1">Cross-platform mobile apps</p>
+                    </div>
+
+                    <!-- Nuxt.js -->
+                    <div class="flex flex-col items-center p-6 bg-slate-50 rounded-xl transition duration-300 hover:bg-slate-100 hover:shadow-md border border-gray-100 tech-icon">
+                        <span class="text-5xl mb-3 text-emerald-600">
+                            <!-- Minimal SVG for Frameworks/SSR -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 8c0 1.5-3.3 5-5.8 5s-5.8-3.5-5.8-5 3.3-5 5.8-5 5.8 3.5 5.8 5z"/><path d="M12 13v9"/></svg>
+                        </span>
+                        <h3 class="text-xl font-semibold text-gray-800">Nuxt.js</h3>
+                        <p class="text-sm text-gray-500 text-center mt-1">Vue.js Framework & SSR</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Projects/Experience Placeholder -->
+            <section class="p-8 bg-white shadow-xl rounded-2xl">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Recent Work</h2>
+                <div class="space-y-6">
+                    <div class="p-5 border-l-4 border-slate-400 bg-gray-50 rounded-lg transition duration-200 hover:bg-gray-100">
+                        <h3 class="font-semibold text-gray-800 text-lg">Full-Stack E-commerce Solution (MERN)</h3>
+                        <p class="text-sm text-gray-600 mt-1">Leveraged MERN stack to build a robust, scalable e-commerce platform with real-time inventory and payment integration.</p>
+                    </div>
+                    <div class="p-5 border-l-4 border-slate-400 bg-gray-50 rounded-lg transition duration-200 hover:bg-gray-100">
+                        <h3 class="font-semibold text-gray-800 text-lg">Cross-Platform Utility App (Flutter)</h3>
+                        <p class="text-sm text-gray-600 mt-1">Designed and developed a sleek mobile application for internal business operations, significantly improving data accessibility.</p>
+                    </div>
+                    <p class="mt-8 text-gray-500 text-center">View my complete work history on LinkedIn or contact me for a detailed CV.</p>
+                </div>
+            </section>
+
+             <!-- Personal Interest / Hobbies -->
+            <section class="p-8 bg-white shadow-xl rounded-2xl">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Interests</h2>
+                <div class="flex items-center space-x-4">
+                    <span class="text-4xl text-amber-500">📚</span>
+                    <p class="text-lg text-gray-700">
+                        I am an avid reader and **love to read books**. This hobby fuels my curiosity, enhances my focus, and helps me approach problem-solving with a broader perspective.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-16 pt-8 border-t border-gray-200 text-center text-gray-500">
+            <p class="mb-2">&copy; 2025 Mokshada. Built with Passion in Kerala.</p>
+            <div class="flex justify-center space-x-6 text-base">
+                <a href="#" class="hover:text-slate-700 transition font-medium">LinkedIn</a>
+                <a href="#" class="hover:text-slate-700 transition font-medium">GitHub</a>
+                <a href="#" class="hover:text-slate-700 transition font-medium">Email</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
